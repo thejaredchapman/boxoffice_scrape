@@ -63,9 +63,9 @@ def parse_and_extract(url, name="current_global_boxoffice"):
     # Make directory called data 
     df = pd.DataFrame(table_data, columns=header_names)
     # df = pd.DataFrame(table_data_dicts)
-    path = os.path.join(BASE_DIR< 'data')
+    path = os.path.join(BASE_DIR, 'data')
     os.makedirs(path, exist_ok=True)
-    filepath = os.path.join('data', f'{name}')
+    filepath = os.path.join('data', f'{name}.csv')
     df.to_csv(f'data/{name}.csv', index=False) 
     return True
 
@@ -97,3 +97,5 @@ if __name__ == "__main__":
         count = 1
     
     run(start_year, years_ago = 10)
+
+# to start file, enter file name with range of years for argument. for example 2010 - 2020, "python scrape_movies 2010 2020"
