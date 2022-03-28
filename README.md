@@ -10,6 +10,9 @@ Created program to extract current yearly data to csv file.
 #### (scrape_movies.py)  
 Created program to extract range of yearly data to csv file(s) and create directory on main computer. 
 
+####
+Files Cleaned into CSV filed then turn into JSON file using FastAPI
+
 ### Thank you
 
 ##### Data scraped from https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab
